@@ -124,4 +124,13 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+    @Test
+    public void convert_40_into_LX() {
+
+        int i = 40;
+        String expected = "LX";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
