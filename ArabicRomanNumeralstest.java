@@ -86,4 +86,14 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void convert_13_into_XIII() {
+
+        int i = 13;
+        String expected = "XIII";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
