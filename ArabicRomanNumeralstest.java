@@ -96,4 +96,14 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    public void convert_5_into_V() {
+
+        int i = 5;
+        String expected = "V";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
