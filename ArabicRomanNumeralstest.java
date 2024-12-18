@@ -151,5 +151,14 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+    @Test
+    public void convert_50_into_L() {
+
+        int i = 50;
+        String expected = "L";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 
 }
