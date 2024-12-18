@@ -41,4 +41,13 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+    @Test
+    public void convert_20_into_XX() {
+
+        int i = 20;
+        String expected = "XX";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
