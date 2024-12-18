@@ -77,4 +77,13 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+    @Test
+    public void convert_12_into_XII() {
+
+        int i = 12;
+        String expected = "XII";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
