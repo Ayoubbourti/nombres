@@ -23,4 +23,13 @@ public class ArabicRomanNumeralstest {
             String result = converter.convert(i);
             assertThat(result).isEqualTo(expected);
         }
+    @Test
+    public void convert_3_into_III() {
+
+        int i = 3;
+        String expected = "III";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
