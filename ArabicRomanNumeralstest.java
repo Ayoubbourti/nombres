@@ -115,4 +115,13 @@ public class ArabicRomanNumeralstest {
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
     }
+    @Test
+    public void convert_9_into_IX() {
+
+        int i = 9;
+        String expected = "IX";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
 }
