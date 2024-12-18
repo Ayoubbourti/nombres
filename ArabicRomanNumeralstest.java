@@ -128,7 +128,16 @@ public class ArabicRomanNumeralstest {
     public void convert_40_into_LX() {
 
         int i = 40;
-        String expected = "XL";
+        String expected = "LX";
+        ArabicRomanNumerals converter = new ArabicRomanNumerals();
+        String result = converter.convert(i);
+        assertThat(result).isEqualTo(expected);
+    }
+    @Test
+    public void convert_45_into_XLV() {
+
+        int i = 45;
+        String expected = "XLV";
         ArabicRomanNumerals converter = new ArabicRomanNumerals();
         String result = converter.convert(i);
         assertThat(result).isEqualTo(expected);
